@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/superplayer_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/superplayer_ic_vod_cover_top"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/superplayer_media_controller_view_height"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+
+            <ImageView
+                android:id="@+id/superplayer_iv_sound_track"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:gravity="right"
+                android:visibility="visible"
+                android:src="@drawable/superplayer_multi_audio"/>
+
+            <ImageView
+                android:id="@+id/superplayer_iv_subtitle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:gravity="right"
+                android:visibility="visible"
+                android:src="@drawable/superplayer_multi_subtitle"/>
+
+            <ImageView
+                android:id="@+id/superplayer_iv_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:gravity="right"
+                android:visibility="gone"
+                android:src="@drawable/superplayer_ic_vod_download"/>
+
+            <ImageView
+                android:id="@+id/superplayer_iv_danmuku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:gravity="right"
+                android:src="@drawable/superplayer_ic_danmuku_off" />
+
+            <ImageView
+                android:id="@+id/superplayer_iv_snapshot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:gravity="right"
+                android:src="@drawable/superplayer_ic_vod_snapshot_normal" />
+
+            <ImageView
+                android:id="@+id/superplayer_iv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="right"
+                android:src="@drawable/superplayer_ic_vod_more_normal" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/superplayer_play_backward"
+        android:layout_width="180dp"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@drawable/superplayer_playbackward_backgrand"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/iv_superplayer_playbackward"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/superplayer_playbackward"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_below="@id/iv_superplayer_playbackward"
+            android:text="@string/superplayer_playbackward"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/superplayer_play_forward"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:layout_width="180dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@drawable/superplayer_playforward_backgrand"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/iv_superplayer_playforward"
+            android:layout_marginLeft="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/superplayer_playforward"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:layout_below="@id/iv_superplayer_playforward"
+            android:text="@string/superplayer_playforward"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/superplayer_large_tv_vtt_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/superplayer_ll_bottom"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/superplayer_shape_vtt_text_bg"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text=""
+        android:textColor="@color/superplayer_white"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <com.tencent.liteav.demo.superplayer.ui.view.VodResolutionView
+        android:id="@+id/superplayer_vod_resolution"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" />
+
+    <com.tencent.liteav.demo.superplayer.ui.view.VodMoreView
+        android:id="@+id/superplayer_vod_more"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/superplayer_iv_lock"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/superplayer_ic_player_unlock" />
+
+    <LinearLayout
+        android:id="@+id/superplayer_ll_replay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:tint="@color/superplayer_white"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/superplayer_ic_replay" />
+        <TextView
+            android:textColor="@color/superplayer_white"
+            android:text="@string/superplayer_replay"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/superplayer_tv_back_to_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/superplayer_ll_bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/superplayer_shape_round_bg"
+        android:text="@string/superplayer_back_live"
+        android:visibility="gone" />
+
+    <com.tencent.liteav.demo.superplayer.ui.view.VodSoundTrackView
+        android:id="@+id/superplayer_vod_selection_sound_track"
+        android:layout_width="282dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" />
+
+    <com.tencent.liteav.demo.superplayer.ui.view.VodSubtitlesView
+        android:id="@+id/superplayer_vod_selection_subtitle"
+        android:layout_width="282dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" />
+
+    <com.tencent.liteav.demo.superplayer.ui.view.VodSubtitlesSettingView
+        android:id="@+id/superplayer_vod_selection_subtitle_setting"
+        android:layout_width="282dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="gone" />
+
+
+    <com.tencent.liteav.demo.superplayer.ui.view.VolumeBrightnessProgressLayout
+        android:id="@+id/superplayer_gesture_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center" />
+
+
+    <com.tencent.liteav.demo.superplayer.ui.view.VideoProgressLayout
+        android:id="@+id/superplayer_video_progress_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center" />
+
+
+    <ImageView
+        android:id="@+id/superplayer_large_iv_water_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <ImageView
+        android:scaleType="fitCenter"
+        android:id="@+id/superplayer_cover_view"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent" />
+
+    <!--标题-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/superplayer_media_controller_view_height"
+        android:background="@drawable/superplayer_top_shadow"
+        android:gravity="left"
+        android:id="@+id/superplayer_ll_title"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/superplayer_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/superplayer_btn_back_play" />
+
+        <TextView
+            android:id="@+id/superplayer_tv_title_full_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/superplayer_small_video_special_effects_editing"
+            android:textColor="@android:color/white"
+            android:textSize="11dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/superplayer_ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/superplayer_bottom_shadow"
+        android:paddingEnd="15dp"
+        android:orientation="horizontal">
+
+        <!--播放/暂停-->
+        <ImageView
+            android:id="@+id/superplayer_iv_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/superplayer_ic_vod_pause_normal" />
+
+        <!--播放位置-->
+        <TextView
+            android:id="@+id/superplayer_tv_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="00:00"
+            android:textColor="@android:color/white"
+            android:textSize="11.0sp" />
+
+        <com.tencent.liteav.demo.superplayer.ui.view.PointSeekBar
+            android:id="@+id/superplayer_seekbar_progress"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_weight="1.0"
+            app:psb_backgroundColor="@color/superplayer_biz_audio_progress_second"
+            app:psb_max="100"
+            app:psb_progress="0"
+            app:psb_progressColor="#FF584C"
+            app:psb_progressHeight="2dp"
+            app:psb_thumbBackground="@drawable/superplayer_ic_vod_thumb" />
+
+        <!--总时长-->
+        <TextView
+            android:id="@+id/superplayer_tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="00:00"
+            android:textColor="@android:color/white"
+            android:textSize="11.0sp" />
+
+        <TextView
+            android:id="@+id/superplayer_tv_quality"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/superplayer_original_picture"
+            android:textColor="@android:color/white"
+            android:textSize="11dp" />
+
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/superplayer_iv_play_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/superplayer_play_next"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/superplayer_pb_live"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/superplayer_resume"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/superplayer_ic_vod_play_normal"
+        android:visibility="gone" />
+
+    <com.tencent.liteav.demo.superplayer.ui.view.VipWatchView
+        android:id="@+id/superplayer_vip_watch_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.tencent.liteav.demo.superplayer.ui.view.download.DownloadMenuListView
+        android:id="@+id/superplayer_cml_cache_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"/>
+</RelativeLayout>

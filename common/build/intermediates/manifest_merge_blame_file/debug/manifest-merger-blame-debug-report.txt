@@ -1,0 +1,15 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tencent.liteav.demo.common" >
+4
+5    <uses-sdk android:minSdkVersion="19" />
+5-->D:\remote_work\FeedStreamPlayer\common\src\main\AndroidManifest.xml
+6
+7    <application>
+7-->D:\remote_work\FeedStreamPlayer\common\src\main\AndroidManifest.xml:4:5-6:19
+8        <activity android:name="com.tencent.liteav.demo.common.QRCodeScanActivity" />
+8-->D:\remote_work\FeedStreamPlayer\common\src\main\AndroidManifest.xml:5:9-56
+8-->D:\remote_work\FeedStreamPlayer\common\src\main\AndroidManifest.xml:5:19-53
+9    </application>
+10
+11</manifest>

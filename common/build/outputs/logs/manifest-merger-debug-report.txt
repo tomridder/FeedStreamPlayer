@@ -1,0 +1,31 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\remote_work\FeedStreamPlayer\common\src\main\AndroidManifest.xml:1:1-7:12
+INJECTED from D:\remote_work\FeedStreamPlayer\common\src\main\AndroidManifest.xml:1:1-7:12
+INJECTED from D:\remote_work\FeedStreamPlayer\common\src\main\AndroidManifest.xml:1:1-7:12
+	package
+		ADDED from D:\remote_work\FeedStreamPlayer\common\src\main\AndroidManifest.xml:2:5-45
+		INJECTED from D:\remote_work\FeedStreamPlayer\common\src\main\AndroidManifest.xml
+		INJECTED from D:\remote_work\FeedStreamPlayer\common\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\remote_work\FeedStreamPlayer\common\src\main\AndroidManifest.xml:1:11-69
+application
+ADDED from D:\remote_work\FeedStreamPlayer\common\src\main\AndroidManifest.xml:4:5-6:19
+activity#com.tencent.liteav.demo.common.QRCodeScanActivity
+ADDED from D:\remote_work\FeedStreamPlayer\common\src\main\AndroidManifest.xml:5:9-56
+	android:name
+		ADDED from D:\remote_work\FeedStreamPlayer\common\src\main\AndroidManifest.xml:5:19-53
+uses-sdk
+INJECTED from D:\remote_work\FeedStreamPlayer\common\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\remote_work\FeedStreamPlayer\common\src\main\AndroidManifest.xml
+INJECTED from D:\remote_work\FeedStreamPlayer\common\src\main\AndroidManifest.xml
+INJECTED from D:\remote_work\FeedStreamPlayer\common\src\main\AndroidManifest.xml
+INJECTED from D:\remote_work\FeedStreamPlayer\common\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\remote_work\FeedStreamPlayer\common\src\main\AndroidManifest.xml
+		ADDED from D:\remote_work\FeedStreamPlayer\common\src\main\AndroidManifest.xml
+		INJECTED from D:\remote_work\FeedStreamPlayer\common\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\remote_work\FeedStreamPlayer\common\src\main\AndroidManifest.xml
+		ADDED from D:\remote_work\FeedStreamPlayer\common\src\main\AndroidManifest.xml
+		INJECTED from D:\remote_work\FeedStreamPlayer\common\src\main\AndroidManifest.xml

@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\remote_work\FeedStreamPlayer\superplayerkit\src\main\AndroidManifest.xml:2:1-3:53
+INJECTED from D:\remote_work\FeedStreamPlayer\superplayerkit\src\main\AndroidManifest.xml:2:1-3:53
+INJECTED from D:\remote_work\FeedStreamPlayer\superplayerkit\src\main\AndroidManifest.xml:2:1-3:53
+	package
+		ADDED from D:\remote_work\FeedStreamPlayer\superplayerkit\src\main\AndroidManifest.xml:3:5-50
+		INJECTED from D:\remote_work\FeedStreamPlayer\superplayerkit\src\main\AndroidManifest.xml
+		INJECTED from D:\remote_work\FeedStreamPlayer\superplayerkit\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\remote_work\FeedStreamPlayer\superplayerkit\src\main\AndroidManifest.xml:2:11-69
+uses-sdk
+INJECTED from D:\remote_work\FeedStreamPlayer\superplayerkit\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\remote_work\FeedStreamPlayer\superplayerkit\src\main\AndroidManifest.xml
+INJECTED from D:\remote_work\FeedStreamPlayer\superplayerkit\src\main\AndroidManifest.xml
+INJECTED from D:\remote_work\FeedStreamPlayer\superplayerkit\src\main\AndroidManifest.xml
+INJECTED from D:\remote_work\FeedStreamPlayer\superplayerkit\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\remote_work\FeedStreamPlayer\superplayerkit\src\main\AndroidManifest.xml
+		ADDED from D:\remote_work\FeedStreamPlayer\superplayerkit\src\main\AndroidManifest.xml
+		INJECTED from D:\remote_work\FeedStreamPlayer\superplayerkit\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\remote_work\FeedStreamPlayer\superplayerkit\src\main\AndroidManifest.xml
+		ADDED from D:\remote_work\FeedStreamPlayer\superplayerkit\src\main\AndroidManifest.xml
+		INJECTED from D:\remote_work\FeedStreamPlayer\superplayerkit\src\main\AndroidManifest.xml

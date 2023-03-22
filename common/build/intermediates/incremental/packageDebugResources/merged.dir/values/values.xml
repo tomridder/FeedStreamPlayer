@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_dialog_bg">#66000000</color>
+    <color name="ugckit_actionsheet_gray">#8F8F8F</color>
+    <color name="ugckit_black">#000000</color>
+    <color name="ugckit_btn_blue">#0F73CB</color>
+    <color name="ugckit_white">#FFFFFF</color>
+    <string name="btn_forbit">禁止</string>
+    <string name="common_toast_camera_permission_failed">相机权限获取失败。</string>
+    <string name="common_toast_qr_code_error">二维码有误。</string>
+    <string name="permission_always_allow">始终允许</string>
+    <string name="permission_introduction_audio">用于采集用户声音，录制声音</string>
+    <string name="permission_introduction_audio_title">麦克风权限</string>
+    <string name="permission_introduction_camera">用于采集摄像头画面，拍摄照片和录制视频</string>
+    <string name="permission_introduction_camera_title">相机权限</string>
+    <string name="permission_introduction_positive">允许授权</string>
+    <string name="permission_introduction_title">存储权限申请说明</string>
+    <string name="permission_introduction_write">用于存储SDK配置文件、日志文件和媒体文件，读取本地媒体文件</string>
+    <string name="permission_introduction_write_title">存储权限</string>
+    <style name="DialogFragment" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowBackground">@color/app_dialog_bg</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+    <style name="LoadingDialogStyle" parent="android:Theme.DeviceDefault.Light.Dialog">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+</resources>
